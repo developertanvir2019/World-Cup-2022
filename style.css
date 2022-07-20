@@ -1,0 +1,189 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------
+top banner section
+------------------------- */
+.banner {
+    width: 90%;
+    height: 100vh;
+    background-color: #161616;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner p {
+    color: white;
+    margin: 30px 0;
+}
+
+.banner h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #DD0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+.banner-info {
+    padding: 0 35px;
+}
+
+.banner img {
+    width: 500px;
+    height: 550px;
+    position: relative;
+    top: 17px;
+    overflow: hidden;
+    padding: 0 35px;
+
+}
+
+
+/* all match and uopcoming match */
+.all-match {
+    width: 90%;
+    height: auto;
+    margin: 70px auto;
+    display: flex;
+}
+
+.menu {
+    width: 240px;
+    height: 250px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.menu a {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin: 8px 0;
+    width: 165px;
+    text-align: center;
+}
+
+/* highlight button */
+#highlight-button {
+    background-color: #DD0000;
+    color: white;
+}
+
+/* article or blog part */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: auto;
+
+}
+
+.blog {
+    height: 330px;
+    width: 270px;
+    border: 2px solid rgb(216, 213, 213);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.blog img {
+    max-width: 100%;
+}
+
+.blog button {
+    height: 32px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+
+.card-info {
+    display: flex;
+    margin-top: 30px;
+}
+
+.card-info span {
+    margin: 0 5px;
+}
+
+.all-info {
+    margin-left: 20px;
+}
+
+/* footer part */
+footer {
+    width: 100%;
+    height: 344px;
+    background: #161616;
+
+}
+
+footer h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 120px;
+}
+
+hr {
+    width: auto;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-menu {
+    display: flex;
+    gap: 34px;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* upcoming match area-- second page */
+.team-flag {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.upcoming-discribtion p {
+    margin: 20px;
+    text-align: center;
+    color: rgb(95, 93, 93);
+}
+
+.upcoming-discribtion h2 {
+    margin: 20px 0;
+    text-align: center;
+}
