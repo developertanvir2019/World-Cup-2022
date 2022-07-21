@@ -139,6 +139,10 @@ top banner section
     margin-left: 20px;
 }
 
+.tab-button {
+    display: none;
+}
+
 /* footer part */
 footer {
     width: 100%;
@@ -152,7 +156,7 @@ footer h1 {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 hr {
@@ -186,4 +190,230 @@ hr {
 .upcoming-discribtion h2 {
     margin: 20px 0;
     text-align: center;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon a {
+    color: #DD0000;
+    font-size: 30px;
+}
+
+/* button animation */
+.animation {
+    box-shadow: 5px 9px 2px gray;
+}
+
+.animation:hover {
+    background-color: #3e8e41;
+    padding-left: 20px;
+    transition: .4s;
+}
+
+.animation:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+/*--------------------------
+ responssive for tab 
+ ---------------------------------------*/
+@media only screen and (max-width: 992px) and (min-width: 577px) {
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .banner p {
+        display: inline-block;
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+
+    .banner a {
+        margin-top: 20px;
+    }
+
+
+    /* 2nd section */
+    .all-match {
+        flex-direction: column;
+    }
+
+    .menu {
+        background-color: white;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        border: 2px solid gray;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+
+    }
+
+    #card-width {
+
+        width: 90%;
+        margin: 20px 70px;
+    }
+
+    .tab-button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+/*-------------------------- 
+responsive mobile 
+---------------------------------*/
+@media only screen and (max-width: 576px) {
+    .banner {
+        width: 100%;
+        height: 120%;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        overflow: hidden;
+    }
+
+    .banner p {
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .banner h1 {
+        margin: 20px 0;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .banner a {
+        padding: 8px 17px;
+        font-size: 15px;
+        color: white;
+        position: relative;
+        left: 150px;
+        margin-bottom: 20px;
+    }
+
+    .banner img {
+        margin-top: 30px;
+    }
+
+    /* all match and uopcoming match */
+    .all-match {
+        flex-direction: column;
+    }
+
+
+    .menu {
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+    .menu a {
+        border: 2px solid gray;
+    }
+
+    /* highlight button */
+    #highlight-button {
+        background-color: #DD0000;
+        color: white;
+    }
+
+    /* article or blog part */
+    .blogs {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+
+    }
+
+    .blog {
+        border: 2px solid rgb(216, 213, 213);
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 332px;
+        height: auto;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    .tab-button {
+        display: none;
+    }
+
+    /* footer part */
+    footer {
+        width: 100%;
+        height: auto;
+        background: #161616;
+
+    }
+
+    footer h1 {
+        padding-top: 20px;
+    }
+
+    hr {
+        width: auto;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    .footer-menu {
+        display: flex;
+        gap: 2px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    /* social icon */
+    .social-icon {
+        gap: 20px;
+        margin-top: 4px;
+    }
+
+    .social-icon a {
+        color: #DD0000;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
 }
